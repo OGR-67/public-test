@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+/* transformations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* animations */
+.slide-from-left {
+    animation: 1s ease 0s 1 slideInFromLeft;
+}
+
+.slide-from-right {
+    animation: 2s ease 0s 1 slideInFromRight;
+}
+
+/* Variables declaration */
+:root {
+    /* colors */
+    --color-primary: #28B5B5;
+    --color-secondary: #8FD9A8;
+    --color-third: #4B778D;
+    --color-fourth: #D2E69C;
+    /* font sizes */
+    --size-extra-large: 5rem;
+    --size-large: 3rem;
+    --size-regular: 1.5rem;
+    --size-small: 1rem;
+
+}
+
+/* General settings */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    width: fit-content;
+}
+
+.section:nth-child(odd) {
+    color: var(--color-secondary);
+    background-color: var(--color-third);
+    height: 100vh;
+}
+
+.section:nth-child(even) {
+    color: var(--color-fourth);
+    background-color: var(--color-primary);
+    height: 100vh;
+}
+
+/* Components */
+.btn {
+    border-style: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 400;
+
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-third);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-fourth);
+    color: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: var(--color-fourth);
+    color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-fourth);
+}
+
+.skill-index-edge {
+    border-left: 2px solid var(--color-fourth);
+    border-right: 2px solid var(--color-fourth);
+    width: 100%;
+    height: 1.188rem;
+}
+
+.skill-index-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-fourth);
+    align-self: center;
+}
+
+.skill-bar {
+    height: 1.188rem;
+    background-color: var(--color-fourth);
+    margin: 1rem 0 0 0;
+}
+
+/* Typography classes*/
+/* Size */
+.font-extra-large {
+    font-size: var(--size-extra-large);
+}
+
+.font-large {
+    font-size: var(--size-large);
+}
+
+.font-regular {
+    font-size: var(--size-regular);
+}
+
+.font-small {
+    font-size: var(--size-small);
+}
+
+/* weight */
+.thin {
+    font-weight: 100;
+}
+
+.thin-italic {
+    font-style: italic;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* Color */
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.color-fourth {
+    color: var(--color-fourth);
+}
+
+/* utility classes */
+/* Layout */
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-max {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-min-250 {
+    min-width: 250px;
+}
+
+.max-width-400 {
+    max-width: 400px;
+}
+
+.h-min-full {
+    min-height: 100vh;
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
+/* box model */
+.rounded-corners {
+    border-radius: 15px;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-vt-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-hz-2vw {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+/* Background color */
+.bg-third {
+    background-color: var(--color-third);
+}
