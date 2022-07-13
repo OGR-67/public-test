@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap');
 
 /* transformations */
 @keyframes slideInFromLeft {
@@ -53,7 +53,7 @@ html {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 a {
@@ -76,7 +76,7 @@ a {
     border-style: none;
     border-radius: 15px;
     padding: 10px 20px;
-    font-weight: 400;
+    font-weight: 300;
 
 }
 
@@ -140,7 +140,7 @@ a {
 
 /* weight */
 .thin {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .thin-italic {
