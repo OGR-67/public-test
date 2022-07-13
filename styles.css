@@ -64,13 +64,11 @@ a {
 .section:nth-child(odd) {
     color: var(--color-secondary);
     background-color: var(--color-third);
-    height: 100vh;
 }
 
 .section:nth-child(even) {
     color: var(--color-fourth);
     background-color: var(--color-primary);
-    height: 100vh;
 }
 
 /* Components */
