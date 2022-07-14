@@ -42,6 +42,10 @@
     --size-large: 3rem;
     --size-regular: 1.5rem;
     --size-small: 1rem;
+    /* font weight */
+    --font-thin: 300;
+    --font-regular: 400;
+    --font-bold: 700;
 
 }
 
@@ -53,7 +57,7 @@ html {
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: var(--font-thin);
 }
 
 a {
@@ -76,7 +80,7 @@ a {
     border-style: none;
     border-radius: 15px;
     padding: 10px 20px;
-    font-weight: 300;
+    font-weight: var(--font-regular);
 
 }
 
@@ -140,7 +144,7 @@ a {
 
 /* weight */
 .thin {
-    font-weight: 300;
+    font-weight: var(--font-thin);
 }
 
 .thin-italic {
@@ -148,11 +152,11 @@ a {
 }
 
 .regular {
-    font-weight: 400;
+    font-weight: var(--font-regular);
 }
 
 .bold {
-    font-weight: 700;
+    font-weight: var(--font-bold);
 }
 
 /* Color */
