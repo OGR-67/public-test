@@ -124,6 +124,37 @@ a {
     margin: 1rem 0 0 0;
 }
 
+.popup {
+    background-color: var(--color-secondary);
+    text-align: center;
+    color: var(--color-third);
+    font-size: var(--size-regular);
+    padding: 20px;
+    min-width: 50vw;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+
+}
+
+.popup-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xmark {
+    margin: 0 2rem 0 auto;
+    font-size: var(--size-large);
+}
+
 /* Typography classes*/
 /* Size */
 .font-extra-large {
@@ -166,6 +197,10 @@ a {
 
 .color-secondary {
     color: var(--color-secondary);
+}
+
+.color-third {
+    color: var(--color-third)
 }
 
 .color-fourth {
@@ -273,7 +308,21 @@ a {
     padding-right: 2vw;
 }
 
-/* Background color */
+/* Background */
 .bg-third {
     background-color: var(--color-third);
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+/* hover */
+.pointer {
+    cursor: pointer;
+}
+
+/* visibility */
+.hidden {
+    display: none;
 }
