@@ -124,6 +124,36 @@ a {
     margin: 1rem 0 0 0;
 }
 
+.popup-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: var(--color-secondary);
+    text-align: center;
+    color: var(--color-third);
+    font-size: var(--size-regular);
+    padding: 20px;
+    min-width: 50vw;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 50px;
+}
+
+.xmark {
+    margin: 0 2rem 0 auto;
+    font-size: var(--size-large);
+}
+
 /* Typography classes*/
 /* Size */
 .font-extra-large {
@@ -166,6 +196,10 @@ a {
 
 .color-secondary {
     color: var(--color-secondary);
+}
+
+.color-third {
+    color: var(--color-third);
 }
 
 .color-fourth {
@@ -276,4 +310,18 @@ a {
 /* Background color */
 .bg-third {
     background-color: var(--color-third);
+}
+
+/* visibility */
+.blur {
+    filter: blur(2px);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Cursor */
+.pointer {
+    cursor: pointer;
 }
