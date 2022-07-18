@@ -32,9 +32,9 @@ function toggleSkillsBar() {
 }
 
 function toggleDownloadAmbush(){
-    let body = document.getElementById("body")
+    let body = document.querySelector("#body")
     body.classList.toggle("blur")
-    let ambushPopup = document.getElementById("ambushPopup")
+    let ambushPopup = document.querySelector("#ambushPopup")
     ambushPopup.classList.toggle("hidden")
 }
 

@@ -134,7 +134,7 @@ a {
     height: 1.188rem;
     background-color: var(--color-fourth);
     margin: 1rem 0 0 0;
-    transition: width 2s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 
 .popup-container {
@@ -167,6 +167,14 @@ a {
 .xmark {
     margin: 0 2rem 0 auto;
     font-size: var(--size-large);
+}
+
+.scalableLink {
+    transition: transform linear 0.1s;
+}
+
+.scalableLink:hover {
+    transform: scale(1.5);
 }
 
 /* Typography classes*/
