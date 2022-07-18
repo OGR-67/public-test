@@ -23,8 +23,10 @@ function toggleSkillsBar() {
             document.getElementById(skill[0]).classList.add(skill[1])
         }
         else{
-            document.getElementById(skill[0]).classList.remove(skill[1])
+            if (document.getElementById(skill[0]).classList.contains(skill[1])) {
+                document.getElementById(skill[0]).classList.remove(skill[1])
                 document.getElementById(skill[0]).classList.add("w-0")
+            }
         }
     }
 }
