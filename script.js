@@ -31,26 +31,26 @@ function toggleSkillsBar() {
     }
 }
 
-function toggleDownloadAmbush(){
+function blurBody(){
     let body = document.querySelector("#body")
     body.classList.toggle("blur")
-    body.classList.toggle("no-scroll")
+    document.querySelector("body").classList.toggle("no-scroll")
+}
+
+function toggleDownloadAmbush(){
+    blurBody()
     let ambushPopup = document.querySelector("#ambushPopup")
     ambushPopup.classList.toggle("hidden")
 }
 
 function toggleContact(){
-    let body = document.querySelector("#body")
-    body.classList.toggle("blur")
-    document.querySelector("body").classList.toggle("no-scroll")
+    blurBody()
     let contactPopup = document.querySelector("#contactPopup")
     contactPopup.classList.toggle("hidden")
 }
 
 function toggleSkills(){
-    let body = document.querySelector("#body")
-    body.classList.toggle("blur")
-    document.querySelector("body").classList.toggle("no-scroll")
+    blurBody()
     let skillsPopup = document.querySelector("#skillsPopup")
     skillsPopup.classList.toggle("hidden")
 }
