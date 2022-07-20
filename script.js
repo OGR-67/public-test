@@ -12,9 +12,9 @@ function toggleSkillsBar() {
     let skills = {
         "html": "w-max",
         "css": "w-80",
-        "js": "w-60",
-        "python": "w-80",
-        "sql": "w-60",
+        "js": "w-90",
+        "python": "w-90",
+        "sql": "w-80",
     }
     for (let skill of Object.entries(skills)) {
         let sql = document.getElementById("sql")
@@ -34,8 +34,51 @@ function toggleSkillsBar() {
 function toggleDownloadAmbush(){
     let body = document.querySelector("#body")
     body.classList.toggle("blur")
+    body.classList.toggle("no-scroll")
     let ambushPopup = document.querySelector("#ambushPopup")
     ambushPopup.classList.toggle("hidden")
 }
 
+function toggleContact(){
+    let body = document.querySelector("#body")
+    body.classList.toggle("blur")
+    document.querySelector("body").classList.toggle("no-scroll")
+    let contactPopup = document.querySelector("#contactPopup")
+    contactPopup.classList.toggle("hidden")
+}
+
+function toggleSkills(){
+    let body = document.querySelector("#body")
+    body.classList.toggle("blur")
+    document.querySelector("body").classList.toggle("no-scroll")
+    let skillsPopup = document.querySelector("#skillsPopup")
+    skillsPopup.classList.toggle("hidden")
+}
+
+function dateDiffInYears(dateold, datenew) {
+    var ynew = datenew.getFullYear();
+    var mnew = datenew.getMonth();
+    var dnew = datenew.getDate();
+    var yold = dateold.getFullYear();
+    var mold = dateold.getMonth();
+    var dold = dateold.getDate();
+    var diff = ynew - yold;
+    if (mold > mnew) diff--;
+    else {
+        if (mold == mnew) {
+            if (dold > dnew) diff--;
+        }
+    }
+    return diff;
+}
+
+function putAge(){
+    let now = new Date();
+    let birthday = new Date("1986-10-11")
+    let age = dateDiffInYears(birthday, now);
+    document.getElementById("age").innerText = age
+}
+
+putAge()
 document.addEventListener("scroll", toggleSkillsBar)
+
