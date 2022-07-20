@@ -57,18 +57,8 @@ function toggleSkills(){
 
 function dateDiffInYears(dateold, datenew) {
     var ynew = datenew.getFullYear();
-    var mnew = datenew.getMonth();
-    var dnew = datenew.getDate();
     var yold = dateold.getFullYear();
-    var mold = dateold.getMonth();
-    var dold = dateold.getDate();
     var diff = ynew - yold;
-    if (mold > mnew) diff--;
-    else {
-        if (mold == mnew) {
-            if (dold > dnew) diff--;
-        }
-    }
     return diff;
 }
 
@@ -76,9 +66,18 @@ function putAge(){
     let now = new Date();
     let birthday = new Date("1986-10-11")
     let age = dateDiffInYears(birthday, now);
-    document.getElementById("age").innerText = age
+    document.querySelector("#age").innerText = age
 }
 
-putAge()
+function loadPreviews(){
+    document.querySelector("#randomecipePreview").src = "images/randomecipe_preview.gif"
+    document.querySelector("#ambushPreview").src = "images/ambush_preview.gif"
+    document.querySelector("#weddingPreview").src = "images/wedding_preview.gif"
+}
+
+
 document.addEventListener("scroll", toggleSkillsBar)
+putAge()
+// document.addEventListener("load", loadPreviews)
+
 

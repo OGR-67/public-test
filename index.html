@@ -8,10 +8,10 @@
   <title>Olivier Roos</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/aef009d6c6.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
-<body>
+<body onload="loadPreviews()">
   <main id="body">
     <div class="section d-flex justify-center align-center h-min-full h-fit-content p-20">
       <section class="p-20">
@@ -133,7 +133,7 @@
       <div class="d-flex f-wrap justify-evenly">
         <article
           class="d-flex flex-col justify-between max-width-400 w-min-250 m-20 mt-0 p-vt-20 p-hz-2vw bg-primary color-fourth rounded-corners box-shadow">
-          <!-- <img src="images/randomecipe_preview.gif" alt="randomecipe preview" class="w-max rounded-corners"> -->
+          <img alt="randomecipe preview" id="randomecipePreview" class="w-max rounded-corners">
           <h3 class="font-large m-0">Randomecipe</h3>
           <div class="d-flex">
             <h5 class="align-self-start m-0 font-small regular">
@@ -172,7 +172,7 @@
 
         <article
           class="d-flex flex-col justify-between max-width-400 w-min-250 m-20 mt-0 p-vt-20 p-hz-2vw bg-primary color-fourth rounded-corners box-shadow">
-          <!-- <img src="images/ambush_preview.gif" alt="Ambush game preview" class="w-max rounded-corners"> -->
+          <img alt="Ambush game preview" id="ambushPreview" class="w-max rounded-corners">
           <h3 class="font-large m-0">Ambush!!!</h3>
           <div class="d-flex">
             <h5 class="align-self-start font-small regular m-0">
@@ -208,7 +208,7 @@
 
         <article
           class="d-flex flex-col justify-between max-width-400 w-min-250 m-20 mt-0 p-hz-2vw p-vt-20 bg-primary color-fourth rounded-corners box-shadow">
-          <!-- <img src="images/wedding_preview.gif" alt="Wedding preview" class="w-max rounded-corners"> -->
+          <img alt="Wedding preview" id="weddingPreview" class="w-max rounded-corners">
           <h3 class="font-large m-0">Wedding</h3>
           <div class="d-flex">
             <h5 class="align-self-start font-small regular m-0">
