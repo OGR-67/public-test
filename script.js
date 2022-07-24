@@ -10,15 +10,15 @@ function isInViewport(element){
 
 function toggleSkillsBar() {
     let skills = {
-        "html": "w-max",
-        "css": "w-80",
-        "js": "w-90",
-        "python": "w-90",
-        "sql": "w-80",
+        "motivation": "w-max",
+        "relational": "w-max",
+        "rigor": "w-max",
+        "teamWork": "w-max",
+        "autonomous": "w-90",
     }
     for (let skill of Object.entries(skills)) {
-        let sql = document.getElementById("sql")
-        if (isInViewport(sql)) {
+        let autonomous = document.getElementById("autonomous")
+        if (isInViewport(autonomous)) {
             document.getElementById(skill[0]).classList.remove("w-0")
             document.getElementById(skill[0]).classList.add(skill[1])
         }
