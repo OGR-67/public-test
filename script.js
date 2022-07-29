@@ -78,6 +78,3 @@ function loadPreviews(){
 
 document.addEventListener("scroll", toggleSkillsBar)
 putAge()
-// document.addEventListener("load", loadPreviews)
-
-
